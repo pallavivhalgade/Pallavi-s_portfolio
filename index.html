@@ -84,9 +84,6 @@ html[data-theme="dark"] .cell:nth-child(13n),html[data-theme="dark"] .cell:nth-c
 .project-art.driver:before{content:"";position:absolute;width:130px;height:170px;border:2px solid #9cffba;left:50%;top:50%;transform:translate(-50%,-46%);box-shadow:0 0 35px #72ffad55}
 .project-art.interview{background:linear-gradient(135deg,#2b1743,#60408d 45%,#9e75ce)}
 .project-art.interview:before{content:"AI INTERVIEW";position:absolute;inset:0;display:grid;place-items:center;font:700 2rem "DM Mono";color:#fff8;letter-spacing:.04em}
-.project-art.insight{background:
- linear-gradient(135deg,#14233a,#1d5267 45%,#4b9ca3)}
-.project-art.insight:before{content:"INSIGHT AI";position:absolute;inset:0;display:grid;place-items:center;font:700 2rem "DM Mono";color:#dff;letter-spacing:.05em}
 .project-body{padding:16px 18px 19px}
 .project-top{display:flex;justify-content:space-between;gap:10px;align-items:center}
 .project h3{margin:0;font-size:1.02rem}
@@ -136,7 +133,6 @@ font:800 14px "DM Mono";letter-spacing:-.05em;box-shadow:var(--shadow)}
 .tech-flow .tech{flex:0 0 82px}
 @keyframes flow{to{transform:translateX(-50%)}}
 .exp ul{margin:9px 0 0;padding-left:18px;color:var(--muted);font-size:.8rem;line-height:1.55}
-.demo-pending{border-style:dashed!important;color:var(--muted)!important;cursor:default}
 .connect-smart{min-height:330px;border-radius:14px;border:1px solid var(--line);background:
  radial-gradient(circle at 20% 22%,color-mix(in srgb,var(--accent2) 35%,transparent),transparent 28%),
  radial-gradient(circle at 78% 70%,color-mix(in srgb,var(--accent) 28%,transparent),transparent 30%),
@@ -441,6 +437,31 @@ section[id]{scroll-margin-top:105px}
  .activity-grid{grid-template-columns:1fr}.heatmap{grid-template-columns:repeat(18,1fr)}.resume-box{align-items:flex-start;flex-direction:column}
  .name{font-size:1.8rem}
 }
+
+.project-art.has-image{
+  display:block;
+  background:var(--paper2);
+  text-decoration:none;
+}
+.project-art.has-image:before,
+.project-art.has-image:after{
+  display:none!important;
+}
+.project-art.has-image img{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.project-art.interview.has-image img{
+  object-fit:cover;
+}
+.project-art.driver.has-image{
+  background:#050b14;
+}
+.project-art.driver.has-image img{
+  object-fit:contain;
+}
+
 </style>
 </head>
 <body>
@@ -523,10 +544,16 @@ section[id]{scroll-margin-top:105px}
   <div style="display:flex;justify-content:space-between;align-items:center"><h2 class="section-title">Projects</h2><a class="projects-view-link" href="https://github.com/pallavivhalgade" target="_blank">View GitHub ↗</a></div>
   <div class="projects-grid">
     <article class="project">
-      <div class="project-art driver"></div>
+      <a class="project-art driver has-image"
+       href="https://github.com/pallavivhalgade/AI-Based-Driver-Fatigue-and-Distraction-Detection"
+       target="_blank" rel="noreferrer"
+       aria-label="Open DriverGuard AI GitHub repository">
+      <img src="assets/driverguard-settings.jpeg"
+           alt="DriverGuard AI Android profile and safety settings screen">
+    </a>
       <div class="project-body">
         <div class="project-top"><h3>DriverGuard AI</h3><a class="arrow" href="https://github.com/pallavivhalgade/AI-Based-Driver-Fatigue-and-Distraction-Detection" target="_blank">↗</a></div>
-        <p>A real-time Android driver-safety system that detects fatigue and distraction signals on-device, triggers voice warnings, and supports emergency-response workflows when risk persists.</p>
+        <p>A real-time Android driver-safety application that detects drowsiness and distraction using offline on-device computer vision and AI, with voice warnings and emergency SMS escalation for persistent risk.</p>
         <div class="stack">
           <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">Python</div>
           <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg">Flutter</div>
@@ -538,44 +565,32 @@ section[id]{scroll-margin-top:105px}
           <div class="tech"><div class="tech-symbol">TTS</div>Flutter TTS</div>
           <div class="tech"><div class="tech-symbol">SEC</div>Secure Storage</div>
     </div>
-        <div class="project-links"><a href="https://github.com/pallavivhalgade/AI-Based-Driver-Fatigue-and-Distraction-Detection" target="_blank">GitHub</a><a class="demo-pending" href="javascript:void(0)">Live Demo — add later</a></div>
+        <div class="project-links"><a href="https://github.com/pallavivhalgade/AI-Based-Driver-Fatigue-and-Distraction-Detection" target="_blank" rel="noreferrer">GitHub</a></div>
       </div>
     </article>
 
     <article class="project">
-      <div class="project-art interview"></div>
+      <a class="project-art interview has-image"
+       href="https://interview-prep-agent-94gjmmzu9q3w9gp4by8uan.streamlit.app/"
+       target="_blank" rel="noreferrer"
+       aria-label="Open Interview Prep Agent live demo">
+      <img src="assets/interview-prep-agent.png"
+           alt="Interview Prep Agent Streamlit application home screen">
+    </a>
       <div class="project-body">
-        <div class="project-top"><h3>Interview Prep Agent</h3><a class="arrow" href="https://interview-prep-agent-94gjmmzu9q3w9gp4by8uan.streamlit.app/" target="_blank">↗</a></div>
-        <p>An agentic interview-prep application that converts a job description and resume into reviewed interview questions, answer frameworks, resume–JD matching, skill-gap analysis, and a focused study plan.</p>
+        <div class="project-top"><h3>Interview Prep Agent</h3><a class="arrow" href="https://interview-prep-agent-94gjmmzu9q3w9gp4by8uan.streamlit.app/" target="_blank" rel="noreferrer">↗</a></div>
+        <p>An AI-powered interview preparation application that analyzes resumes and job descriptions to generate role-specific questions, grounded answers, skill-gap insights, and personalized study plans.</p>
         <div class="stack">
           <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">Python</div>
           <div class="tech"><img src="https://cdn.simpleicons.org/streamlit/FF4B4B">Streamlit</div>
-          <div class="tech"><img src="https://cdn.simpleicons.org/meta/0866FF">Llama 3.1</div>
+          <div class="tech"><div class="tech-symbol">LLM</div>Groq LLM</div>
           <div class="tech"><img src="https://cdn.simpleicons.org/huggingface/FFD21E">Sentence Transformers</div>
           <div class="tech"><div class="tech-symbol">GQ</div>Groq API</div>
           <div class="tech"><div class="tech-symbol">PDF</div>pdfplumber</div>
           <div class="tech"><div class="tech-symbol">DOC</div>python-docx</div>
           <div class="tech"><img src="https://cdn.simpleicons.org/pytest/0A9EDC">pytest</div>
     </div>
-        <div class="project-links"><a href="https://github.com/pallavivhalgade/interview-prep-agent" target="_blank">GitHub</a><a class="live" href="https://interview-prep-agent-94gjmmzu9q3w9gp4by8uan.streamlit.app/" target="_blank">Live Demo</a></div>
-      </div>
-    </article>
-
-    <article class="project">
-      <div class="project-art insight"></div>
-      <div class="project-body">
-        <div class="project-top"><h3>InsightAI</h3><span class="arrow">↗</span></div>
-        <p>An agentic business-intelligence assistant that turns natural-language questions into structured analysis, SQL-driven data exploration, and concise business insights.</p>
-        <div class="stack">
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">Python</div>
-          <div class="tech"><img src="https://cdn.simpleicons.org/streamlit/FF4B4B">Streamlit</div>
-          <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg">Pandas</div>
-          <div class="tech"><div class="tech-symbol">LG</div>LangGraph</div>
-          <div class="tech"><img src="https://cdn.simpleicons.org/langchain">LangChain</div>
-          <div class="tech"><div class="tech-symbol">SQL</div>SQL</div>
-          <div class="tech"><div class="tech-symbol">LLM</div>LLMs</div>
-    </div>
-        <div class="project-links"><a class="demo-pending" href="javascript:void(0)">GitHub — add later</a><a class="demo-pending" href="javascript:void(0)">Live Demo — add later</a></div>
+        <div class="project-links"><a href="https://github.com/pallavivhalgade/interview-prep-agent" target="_blank" rel="noreferrer">GitHub</a><a class="live" href="https://interview-prep-agent-94gjmmzu9q3w9gp4by8uan.streamlit.app/" target="_blank" rel="noreferrer">Live Demo</a></div>
       </div>
     </article>
   
@@ -731,8 +746,11 @@ section[id]{scroll-margin-top:105px}
 <section id="resume" class="section">
   <h2 class="section-title">Resume</h2>
   <div class="resume-box">
-    <div><h3>My resume</h3><p>Experience, projects, education and technical skills in one concise document.</p></div>
-    <a class="resume-btn" href="#connect">Resume PDF — add file ↗</a>
+    <div>
+      <h3>AI/ML Resume — 2026</h3>
+      <p>Experience, AI/ML projects, education, and technical skills in one concise resume.</p>
+    </div>
+    <a class="resume-btn" href="assets/Pallavi_Vholgade_BE.pdf" target="_blank" rel="noreferrer">View Resume ↗</a>
   </div>
 </section>
 
