@@ -1,0 +1,391 @@
+{
+  "deviconCommit": "6a37858047b0e8d9c9c0e68f4a071fc410652e89",
+  "lobehubVersion": "1.97.0",
+  "carbonVersion": "12.87.0",
+  "simpleIconsVersion": "16.35.0",
+  "assets": [
+    {
+      "name": "CSS",
+      "file": "css3.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/css3/css3-original.svg",
+      "note": null,
+      "bytes": 778,
+      "sha256": "36b7d94b657d571d3f94042acbf6a4c86a5301a222f83f4b4583ad2acf6e297d"
+    },
+    {
+      "name": "Dart",
+      "file": "dart.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/dart/dart-original.svg",
+      "note": null,
+      "bytes": 710,
+      "sha256": "8dec3d6f6d92d5c8db294baf7ea89cbad5c3dd0f7fde5ca972ffc6cebf9b2d40"
+    },
+    {
+      "name": "Django",
+      "file": "django.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/django/django-plain.svg",
+      "note": null,
+      "bytes": 644,
+      "sha256": "c3037ac285dd5f85ee148a151afb85e64b2a03b62c3affc178376d82ebff6a46"
+    },
+    {
+      "name": "Docker",
+      "file": "docker.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/docker/docker-original.svg",
+      "note": null,
+      "bytes": 4452,
+      "sha256": "3fd830ea69431ed7a0b8d068cd5b34ad3f00a1a78195d50f13ff56713f2462e1"
+    },
+    {
+      "name": "FastAPI",
+      "file": "fastapi.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/fastapi/fastapi-original.svg",
+      "note": null,
+      "bytes": 3065,
+      "sha256": "7ef41f6a363b00ff595e6d0b933c025c92cbfae29dc1df24b2f6eb8b476ee486"
+    },
+    {
+      "name": "Firebase",
+      "file": "firebase.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/firebase/firebase-original.svg",
+      "note": null,
+      "bytes": 1170,
+      "sha256": "6069e979418301117abe2223b62ffb9cedd8c5118fbd805da77170629eaef49c"
+    },
+    {
+      "name": "Flutter",
+      "file": "flutter.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/flutter/flutter-original.svg",
+      "note": null,
+      "bytes": 646,
+      "sha256": "c188249043aecad16b31eaa230474643270a8d8200b897af54a97949cb88e4ae"
+    },
+    {
+      "name": "Git",
+      "file": "git.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/git/git-original.svg",
+      "note": null,
+      "bytes": 778,
+      "sha256": "717a57ea97bf7e86de721dab3e68afac66332a10676d5c9abce4ae6a5a9c9983"
+    },
+    {
+      "name": "GitHub",
+      "file": "github.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/github/github-original.svg",
+      "note": null,
+      "bytes": 1866,
+      "sha256": "45262793de6292206a895ed63593cdb1eaed82074173f7f4b5bdb3e427ca805a"
+    },
+    {
+      "name": "Google Colab",
+      "file": "googlecolab.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/googlecolab/googlecolab-original.svg",
+      "note": null,
+      "bytes": 1169,
+      "sha256": "272a248ec138abf99c09f9a808941e1ac25a7cfa9c4f75c3efe500aff0d02586"
+    },
+    {
+      "name": "Google ML Kit",
+      "file": "mlkit.png",
+      "kind": "brand",
+      "provider": "google",
+      "source": "https://developers.google.com/static/ml-kit/images/MLKit_Icon.png",
+      "note": null,
+      "bytes": 1996,
+      "sha256": "95e5755f4c93f3b2dbb118ebbad9688ede1da83ecb81472bdab28f5be47bd6aa"
+    },
+    {
+      "name": "Groq",
+      "file": "groq.svg",
+      "kind": "brand",
+      "provider": "lobehub",
+      "source": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.97.0/icons/groq.svg",
+      "note": null,
+      "bytes": 563,
+      "sha256": "772be96e9680dd858ad7c30d589cff0611858e3fdde5b7a9aa7aa2c51f769857"
+    },
+    {
+      "name": "HTML",
+      "file": "html5.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/html5/html5-original.svg",
+      "note": null,
+      "bytes": 607,
+      "sha256": "34826e5b3315daadf4fa15f723a3c1d5ba4a89277bfd94e22ac4d7d3d54338c5"
+    },
+    {
+      "name": "IBM Cloud",
+      "file": "ibm-cloud.svg",
+      "kind": "brand",
+      "provider": "carbon",
+      "source": "https://cdn.jsdelivr.net/npm/@carbon/pictograms@12.87.0/svg/ibm--cloud.svg",
+      "note": "IBM Carbon IBM Cloud product pictogram in IBM Blue 60.",
+      "bytes": 1844,
+      "sha256": "7449f58771e501592bc68649ffe1bb119d7485f89cffb994024ea922ae635fd4"
+    },
+    {
+      "name": "IBM watsonx.ai",
+      "file": "watsonx-ai.svg",
+      "kind": "brand",
+      "provider": "carbon",
+      "source": "https://cdn.jsdelivr.net/npm/@carbon/pictograms@12.87.0/svg/watsonx--ai.svg",
+      "note": "IBM Carbon watsonx.ai product pictogram in IBM Blue 60.",
+      "bytes": 1908,
+      "sha256": "e4be47a3ca38db35bf5ab50c211368bf53aa7be3a466d8914cf5140074f1ef7c"
+    },
+    {
+      "name": "Java",
+      "file": "java.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/java/java-original.svg",
+      "note": null,
+      "bytes": 1540,
+      "sha256": "7582e518a9c02425f97155e5a3bd39d1a3a7d421b78caf9c8df7443dad3edc5d"
+    },
+    {
+      "name": "Jupyter Notebook",
+      "file": "jupyter.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/jupyter/jupyter-original.svg",
+      "note": null,
+      "bytes": 1343,
+      "sha256": "9b246fe756a3b600f68a7af1f17702033a1cdb6417da3a9f695337f584b5d545"
+    },
+    {
+      "name": "LangChain",
+      "file": "langchain.svg",
+      "kind": "brand",
+      "provider": "lobehub",
+      "source": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.97.0/icons/langchain-color.svg",
+      "note": null,
+      "bytes": 532,
+      "sha256": "1130bf9624e0dea6e275ce6edfce83056ab7ec6522e24d0dd4670b7d4352fea8"
+    },
+    {
+      "name": "LangGraph",
+      "file": "langgraph.svg",
+      "kind": "brand",
+      "provider": "lobehub",
+      "source": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.97.0/icons/langgraph-color.svg",
+      "note": null,
+      "bytes": 2788,
+      "sha256": "63ae8f41f2b67a3ffac19797aff76e3bc64c3c88d62bd3afb962707c5fbf219b"
+    },
+    {
+      "name": "MediaPipe",
+      "file": "mediapipe.svg",
+      "kind": "brand",
+      "provider": "simple-icons",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.35.0/icons/mediapipe.svg",
+      "note": null,
+      "bytes": 957,
+      "sha256": "3fa13793338c95cf6addbec9b93451a3573327539cd95014c05687a33fa46085"
+    },
+    {
+      "name": "NumPy",
+      "file": "numpy.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/numpy/numpy-original.svg",
+      "note": null,
+      "bytes": 758,
+      "sha256": "efd53b9bf8637500d43ece39fe7ac43c972066f7166e408c5fd13e7cb73d7a05"
+    },
+    {
+      "name": "Ollama",
+      "file": "ollama.svg",
+      "kind": "brand",
+      "provider": "lobehub",
+      "source": "https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@1.97.0/icons/ollama.svg",
+      "note": null,
+      "bytes": 3285,
+      "sha256": "52ba4d85dfa22e475636293346351f9309f246c9f3b78d73dbb3974e0ccd6b48"
+    },
+    {
+      "name": "OpenCV",
+      "file": "opencv.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/opencv/opencv-original.svg",
+      "note": null,
+      "bytes": 1238,
+      "sha256": "a7adfae29bdb714195ea9b31b4f6f3ff7cf21fb448ab244f6110987280bd7b7e"
+    },
+    {
+      "name": "Pandas",
+      "file": "pandas.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/pandas/pandas-original.svg",
+      "note": null,
+      "bytes": 462,
+      "sha256": "0051003a5e5f8739c3304386456843a51be4717dab49c4fea6732ecc6e891b3d"
+    },
+    {
+      "name": "Postman",
+      "file": "postman.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/postman/postman-original.svg",
+      "note": null,
+      "bytes": 3729,
+      "sha256": "0b366c7a023328b0d95e8c90d9050519b8c31d206f8b34db17742488f72efccb"
+    },
+    {
+      "name": "Python",
+      "file": "python.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/python/python-original.svg",
+      "note": null,
+      "bytes": 2300,
+      "sha256": "71493b4a732f0532b3a03a7a95da3ee11a65766367c8303b901ffbe7bf91a3a2"
+    },
+    {
+      "name": "React",
+      "file": "react.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/react/react-original.svg",
+      "note": null,
+      "bytes": 2387,
+      "sha256": "5825b649c8c04dec13ecf01d0182401bd0ec71789d2fa06224866d882cd1515f"
+    },
+    {
+      "name": "Scikit-learn",
+      "file": "scikitlearn.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/scikitlearn/scikitlearn-original.svg",
+      "note": null,
+      "bytes": 4664,
+      "sha256": "d60362a1c43c5571876ebaab923f7783f6f7d3bd64bd78cca765a451dc5e92e2"
+    },
+    {
+      "name": "Sentence Transformers",
+      "file": "sentence-transformers.png",
+      "kind": "brand",
+      "provider": "sbert",
+      "source": "https://www.sbert.net/_static/logo.png",
+      "note": null,
+      "bytes": 46076,
+      "sha256": "d6ab27187819130fbebb54c874ff8856e84228470b376910ad7d97f49035bff7"
+    },
+    {
+      "name": "Streamlit",
+      "file": "streamlit.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/streamlit/streamlit-original.svg",
+      "note": null,
+      "bytes": 2029,
+      "sha256": "e6d3baa8583e9c812b228f4f507d8f386898d05a65ef787fe34b54435a6f4cea"
+    },
+    {
+      "name": "TensorFlow Lite",
+      "file": "tensorflow.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/tensorflow/tensorflow-original.svg",
+      "note": "TensorFlow family brand mark, used to identify TensorFlow Lite.",
+      "bytes": 291,
+      "sha256": "44f2bb3db305bc30f50ec0578f7a4a840c82c3544d36e436ab7d8afee3937b71"
+    },
+    {
+      "name": "VS Code",
+      "file": "vscode.svg",
+      "kind": "brand",
+      "provider": "devicon",
+      "source": "https://raw.githubusercontent.com/devicons/devicon/6a37858047b0e8d9c9c0e68f4a071fc410652e89/icons/vscode/vscode-original.svg",
+      "note": null,
+      "bytes": 3404,
+      "sha256": "503d580c442a7071aae180d9b4766e312e4600bf0e9d842b30f56d0e614eceb8"
+    },
+    {
+      "name": "SQL",
+      "file": "sql.svg",
+      "kind": "concept",
+      "provider": "custom",
+      "source": "Original technical symbol; no official brand logo exists for this concept.",
+      "bytes": 531,
+      "sha256": "6bfab7ea0f7cda0b7c948dbe693600e221c46410159a349e771299cd7a141ccf"
+    },
+    {
+      "name": "NLP",
+      "file": "nlp.svg",
+      "kind": "concept",
+      "provider": "custom",
+      "source": "Original technical symbol; no official brand logo exists for this concept.",
+      "bytes": 457,
+      "sha256": "dff758d403390dab6ed340b509e33d2802e53e01bbdcdc3c50497914149e4eb3"
+    },
+    {
+      "name": "Computer Vision",
+      "file": "computer-vision.svg",
+      "kind": "concept",
+      "provider": "custom",
+      "source": "Original technical symbol; no official brand logo exists for this concept.",
+      "bytes": 486,
+      "sha256": "505254699f8d4a3d8846aac5624413025f49d7e3d4ee5811c046a8f475fd9376"
+    },
+    {
+      "name": "LLMs",
+      "file": "llms.svg",
+      "kind": "concept",
+      "provider": "custom",
+      "source": "Original technical symbol; no official brand logo exists for this concept.",
+      "bytes": 618,
+      "sha256": "d17a4442f6e386d01483940fb27b055107aa26c908819282ff0a57f91671e8e4"
+    },
+    {
+      "name": "RAG",
+      "file": "rag.svg",
+      "kind": "concept",
+      "provider": "custom",
+      "source": "Original technical symbol; no official brand logo exists for this concept.",
+      "bytes": 518,
+      "sha256": "364021c3a2dbee959f0bdbe3b61aa09104af8f42b196fe7a1bb027585ac08f9d"
+    },
+    {
+      "name": "AI Agents",
+      "file": "ai-agents.svg",
+      "kind": "concept",
+      "provider": "custom",
+      "source": "Original technical symbol; no official brand logo exists for this concept.",
+      "bytes": 575,
+      "sha256": "a86dd3c9ea04476284f6e80ceb0377f377a25e6b890801a0656902ee2f10e3a9"
+    },
+    {
+      "name": "Prompt Engineering",
+      "file": "prompt-engineering.svg",
+      "kind": "concept",
+      "provider": "custom",
+      "source": "Original technical symbol; no official brand logo exists for this concept.",
+      "bytes": 560,
+      "sha256": "ee81763cd42ef9bc452ad900a56322f692419efc0b6c69108c784283469c5013"
+    }
+  ]
+}

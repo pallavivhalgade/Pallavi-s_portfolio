@@ -1,0 +1,369 @@
+[
+  {
+    "id": "development",
+    "name": "Application Development",
+    "description": "Languages, frameworks, and foundations for building applications.",
+    "skills": [
+      {
+        "name": "Python",
+        "id": "python",
+        "file": "python.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://docs.python.org/3/"
+      },
+      {
+        "name": "Django",
+        "id": "django",
+        "file": "django.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "plain",
+        "docs": "https://docs.djangoproject.com/"
+      },
+      {
+        "name": "FastAPI",
+        "id": "fastapi",
+        "file": "fastapi.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://fastapi.tiangolo.com/"
+      },
+      {
+        "name": "React",
+        "id": "react",
+        "file": "react.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://react.dev/"
+      },
+      {
+        "name": "Flutter",
+        "id": "flutter",
+        "file": "flutter.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://docs.flutter.dev/"
+      },
+      {
+        "name": "Dart",
+        "id": "dart",
+        "file": "dart.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://dart.dev/"
+      },
+      {
+        "name": "SQL",
+        "id": "sql",
+        "file": "sql.svg",
+        "kind": "concept",
+        "provider": "custom",
+        "docs": "https://developer.mozilla.org/en-US/docs/Glossary/SQL"
+      },
+      {
+        "name": "Git",
+        "id": "git",
+        "file": "git.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://git-scm.com/doc"
+      },
+      {
+        "name": "Java",
+        "id": "java",
+        "file": "java.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://dev.java/learn/"
+      },
+      {
+        "name": "HTML",
+        "id": "html5",
+        "file": "html5.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "name": "CSS",
+        "id": "css3",
+        "file": "css3.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      }
+    ]
+  },
+  {
+    "id": "machine-learning",
+    "name": "Data & Machine Learning",
+    "description": "Working with data, training models, and understanding the world.",
+    "skills": [
+      {
+        "name": "Pandas",
+        "id": "pandas",
+        "file": "pandas.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://pandas.pydata.org/docs/"
+      },
+      {
+        "name": "NumPy",
+        "id": "numpy",
+        "file": "numpy.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://numpy.org/doc/"
+      },
+      {
+        "name": "Scikit-learn",
+        "id": "scikitlearn",
+        "file": "scikitlearn.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://scikit-learn.org/stable/"
+      },
+      {
+        "name": "TensorFlow Lite",
+        "id": "tensorflow",
+        "file": "tensorflow.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://www.tensorflow.org/lite",
+        "note": "TensorFlow family brand mark, used to identify TensorFlow Lite."
+      },
+      {
+        "name": "Google ML Kit",
+        "id": "mlkit",
+        "file": "mlkit.png",
+        "kind": "brand",
+        "provider": "google",
+        "docs": "https://developers.google.com/ml-kit"
+      },
+      {
+        "name": "OpenCV",
+        "id": "opencv",
+        "file": "opencv.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://docs.opencv.org/"
+      },
+      {
+        "name": "MediaPipe",
+        "id": "mediapipe",
+        "file": "mediapipe.svg",
+        "kind": "brand",
+        "provider": "simple-icons",
+        "docs": "https://ai.google.dev/edge/mediapipe"
+      },
+      {
+        "name": "NLP",
+        "id": "nlp",
+        "file": "nlp.svg",
+        "kind": "concept",
+        "provider": "custom",
+        "docs": "https://huggingface.co/learn/nlp-course/"
+      },
+      {
+        "name": "Computer Vision",
+        "id": "computer-vision",
+        "file": "computer-vision.svg",
+        "kind": "concept",
+        "provider": "custom",
+        "docs": "https://opencv.org/"
+      }
+    ]
+  },
+  {
+    "id": "generative-ai",
+    "name": "Generative AI",
+    "description": "Language models, retrieval, and practical intelligent workflows.",
+    "skills": [
+      {
+        "name": "Groq",
+        "id": "groq",
+        "file": "groq.svg",
+        "kind": "brand",
+        "provider": "lobehub",
+        "docs": "https://console.groq.com/docs"
+      },
+      {
+        "name": "Ollama",
+        "id": "ollama",
+        "file": "ollama.svg",
+        "kind": "brand",
+        "provider": "lobehub",
+        "docs": "https://docs.ollama.com/"
+      },
+      {
+        "name": "Streamlit",
+        "id": "streamlit",
+        "file": "streamlit.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://docs.streamlit.io/"
+      },
+      {
+        "name": "Sentence Transformers",
+        "id": "sentence-transformers",
+        "file": "sentence-transformers.png",
+        "kind": "brand",
+        "provider": "sbert",
+        "docs": "https://www.sbert.net/",
+        "wide": true
+      },
+      {
+        "name": "LangChain",
+        "id": "langchain",
+        "file": "langchain.svg",
+        "kind": "brand",
+        "provider": "lobehub",
+        "docs": "https://docs.langchain.com/oss/python/langchain/overview"
+      },
+      {
+        "name": "LangGraph",
+        "id": "langgraph",
+        "file": "langgraph.svg",
+        "kind": "brand",
+        "provider": "lobehub",
+        "docs": "https://docs.langchain.com/oss/python/langgraph/overview"
+      },
+      {
+        "name": "LLMs",
+        "id": "llms",
+        "file": "llms.svg",
+        "kind": "concept",
+        "provider": "custom",
+        "docs": "https://huggingface.co/docs/transformers/"
+      },
+      {
+        "name": "RAG",
+        "id": "rag",
+        "file": "rag.svg",
+        "kind": "concept",
+        "provider": "custom",
+        "docs": "https://docs.langchain.com/oss/python/langchain/rag"
+      },
+      {
+        "name": "AI Agents",
+        "id": "ai-agents",
+        "file": "ai-agents.svg",
+        "kind": "concept",
+        "provider": "custom",
+        "docs": "https://docs.langchain.com/oss/python/langchain/agents"
+      },
+      {
+        "name": "Prompt Engineering",
+        "id": "prompt-engineering",
+        "file": "prompt-engineering.svg",
+        "kind": "concept",
+        "provider": "custom",
+        "docs": "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+      }
+    ]
+  },
+  {
+    "id": "platforms",
+    "name": "Tools & Platforms",
+    "description": "The everyday tools that support development, experiments, and delivery.",
+    "skills": [
+      {
+        "name": "GitHub",
+        "id": "github",
+        "file": "github.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://docs.github.com/"
+      },
+      {
+        "name": "VS Code",
+        "id": "vscode",
+        "file": "vscode.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://code.visualstudio.com/docs"
+      },
+      {
+        "name": "Jupyter Notebook",
+        "id": "jupyter",
+        "file": "jupyter.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://docs.jupyter.org/"
+      },
+      {
+        "name": "Google Colab",
+        "id": "googlecolab",
+        "file": "googlecolab.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://colab.research.google.com/"
+      },
+      {
+        "name": "IBM watsonx.ai",
+        "id": "watsonx-ai",
+        "file": "watsonx-ai.svg",
+        "kind": "brand",
+        "provider": "carbon",
+        "docs": "https://www.ibm.com/products/watsonx-ai",
+        "note": "IBM Carbon watsonx.ai product pictogram in IBM Blue 60."
+      },
+      {
+        "name": "IBM Cloud",
+        "id": "ibm-cloud",
+        "file": "ibm-cloud.svg",
+        "kind": "brand",
+        "provider": "carbon",
+        "docs": "https://cloud.ibm.com/docs",
+        "note": "IBM Carbon IBM Cloud product pictogram in IBM Blue 60."
+      },
+      {
+        "name": "Docker",
+        "id": "docker",
+        "file": "docker.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://docs.docker.com/"
+      },
+      {
+        "name": "Postman",
+        "id": "postman",
+        "file": "postman.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://learning.postman.com/docs/"
+      },
+      {
+        "name": "Firebase",
+        "id": "firebase",
+        "file": "firebase.svg",
+        "kind": "brand",
+        "provider": "devicon",
+        "variant": "original",
+        "docs": "https://firebase.google.com/docs"
+      }
+    ]
+  }
+]
