@@ -21,11 +21,11 @@ function draw(seconds = elapsed) {
   if (!context) return;
   const light = documentRoot.dataset.theme === 'light', orbital = mode === 'ocean';
   const sky = context.createLinearGradient(0,0,width,height);
-  sky.addColorStop(0,light?'#fff6ee':'#10121e');
-  sky.addColorStop(.55,light?'#f7edf1':'#1c1930');
-  sky.addColorStop(1,light?'#edf1fa':'#10252b');
+  sky.addColorStop(0,light?'#f4f6f3':'#071019');
+  sky.addColorStop(.55,light?'#edf1f5':'#101329');
+  sky.addColorStop(1,light?'#eaf3ee':'#081f25');
   context.globalCompositeOperation='source-over';context.fillStyle=sky;context.fillRect(0,0,width,height);
-  const colours=light?[[99,114,178],[176,105,133],[91,147,144]]:[[157,143,218],[109,174,181],[152,130,191]];
+  const colours=light?[[78,115,110],[108,94,158],[85,123,142]]:[[131,232,205],[181,168,255],[115,169,206]];
   const count=width<700?16:22;
   for(let layer=0;layer<count;layer++){
     const color=colours[layer%3];

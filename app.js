@@ -1,15 +1,15 @@
 const $ = (selector) => document.querySelector(selector);
 const themeButton = $('#theme');
-function updateThemeLabel() { const dark = document.documentElement.dataset.theme === 'dark'; themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`); themeButton.textContent = dark ? '☀' : '☾'; themeButton.title = themeButton.getAttribute('aria-label'); document.querySelector('meta[name="theme-color"]').content = dark ? '#10121e' : '#fbf2ec'; }
+function updateThemeLabel() { const dark = document.documentElement.dataset.theme === 'dark'; themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`); themeButton.textContent = dark ? '☀' : '☾'; themeButton.title = themeButton.getAttribute('aria-label'); document.querySelector('meta[name="theme-color"]').content = dark ? '#071019' : '#f4f6f3'; }
 updateThemeLabel();
-themeButton.addEventListener('click', () => { const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = theme; try { localStorage.setItem('pv-aurora-theme', theme); } catch {} document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#10121e' : '#fbf2ec'; themeButton.textContent = theme === 'dark' ? '☾' : '☀'; updateThemeLabel(); });
+themeButton.addEventListener('click', () => { const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = theme; try { localStorage.setItem('pv-aurora-theme', theme); } catch {} document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#071019' : '#f4f6f3'; themeButton.textContent = theme === 'dark' ? '☾' : '☀'; updateThemeLabel(); });
 const menu = $('#menu'), navigation = $('#navigation');
 function closeMenu() { menu.setAttribute('aria-expanded', 'false'); menu.setAttribute('aria-label', 'Open navigation'); navigation.classList.remove('open'); }
 menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); menu.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation'); navigation.classList.toggle('open', open); });
 navigation.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 document.addEventListener('click', e => { if (!e.target.closest('.header')) closeMenu(); });
-const wideScreen = matchMedia('(min-width: 701px)'); wideScreen.addEventListener('change', closeMenu);
+const wideScreen = matchMedia('(min-width: 1101px)'); wideScreen.addEventListener('change', closeMenu);
 const navLinks = [...navigation.querySelectorAll('a')];
 const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')));
 let scrollQueued = false;

@@ -35,10 +35,14 @@ Asset sources and licences are included under `assets/`, including `assets/skill
 
 ## Content updates
 
-Edit `index.html` for page content, `app.js` for project details, and `focus.css` for the focused profile layouts. Project illustrations and sample-data previews are identified in the relevant details. Keep role titles, employment dates and numerical claims grounded in actual records. The downloadable r?sum? is maintained separately.
+Edit `index.html` for page content, `app.js` for project details, and `immersive.css` for the focused profile layouts. Project illustrations and sample-data previews are identified in the relevant details. Keep role titles, employment dates and numerical claims grounded in actual records. The downloadable r?sum? is maintained separately.
 
 ## Certifications
 
 The training and credentials section contains seven entries with category filters: one training completion, four internship completions/milestones, and two hackathon participations. The Gen AI Exchange participation certificate links to the supplied public Google Drive file. Other entries show titles, issuers, learning details and related work without publishing uploaded certificate PDFs or personal credential identifiers. No certificate URLs or issue dates are invented.
 
 Edit `certifications.js` for filter behavior and `certifications.css` for responsive presentation. Certificate cards are present in the HTML and remain available without JavaScript.
+
+## Visual system
+
+The site uses a unified Bricolage Grotesque / Inter / Space Grotesk type system, navy/mint/violet dark mode, and a complementary light mode. `immersive.css` owns the responsive layout and card presentation; `project-models.css` supplies the existing project illustrations. Pointer-driven card depth, scroll reveals, and progress are in `immersive.js`, with reduced-motion and coarse-pointer fallbacks. Project screenshots remain labeled as sample-data or test-data previews. Older style files are retained for history but are not loaded.
