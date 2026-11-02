@@ -1,6 +1,6 @@
 const $ = (selector) => document.querySelector(selector);
 const themeButton = $('#theme');
-function updateThemeLabel() { const dark = document.documentElement.dataset.theme === 'dark'; themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`); themeButton.textContent = dark ? '☾' : '☀'; document.querySelector('meta[name="theme-color"]').content = dark ? '#10121e' : '#fbf2ec'; }
+function updateThemeLabel() { const dark = document.documentElement.dataset.theme === 'dark'; themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`); themeButton.textContent = dark ? '☀' : '☾'; themeButton.title = themeButton.getAttribute('aria-label'); document.querySelector('meta[name="theme-color"]').content = dark ? '#10121e' : '#fbf2ec'; }
 updateThemeLabel();
 themeButton.addEventListener('click', () => { const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = theme; try { localStorage.setItem('pv-aurora-theme', theme); } catch {} document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#10121e' : '#fbf2ec'; themeButton.textContent = theme === 'dark' ? '☾' : '☀'; updateThemeLabel(); });
 const menu = $('#menu'), navigation = $('#navigation');
@@ -15,12 +15,109 @@ const sections = navLinks.map(a => document.querySelector(a.getAttribute('href')
 let scrollQueued = false;
 function updateNavigation() { let active; for (const section of sections) { if (section.getBoundingClientRect().top < 180) active = section.id; } navLinks.forEach(a => { const selected = a.hash === `#${active}`; a.classList.toggle('active', selected); if (selected) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); }); scrollQueued = false; }
 window.addEventListener('scroll', () => { if (!scrollQueued) { scrollQueued = true; requestAnimationFrame(updateNavigation); } }, { passive: true }); updateNavigation();
-document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => { const filter = button.dataset.filter; let count = 0; document.querySelectorAll('[data-filter]').forEach(b => { b.classList.toggle('active', b === button); b.setAttribute('aria-pressed', String(b === button)); }); document.querySelectorAll('.project-card').forEach(card => { card.hidden = filter !== 'all' && !card.dataset.category.split(' ').includes(filter); if (!card.hidden) count++; }); $('.project-count').textContent = `${count} projects`; }));
+document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => { const filter = button.dataset.filter; let count = 0; document.querySelectorAll('[data-filter]').forEach(b => { b.classList.toggle('active', b === button); b.setAttribute('aria-pressed', String(b === button)); }); document.querySelectorAll('.project-card').forEach(card => { card.hidden = filter !== 'all' && !card.dataset.category.split(' ').includes(filter); if (!card.hidden) count++; }); $('.project-count').textContent = `${count} ${count === 1 ? 'project' : 'projects'}`; }));
 const projects = {
- career: { title: 'CareerPilot AI', label: '01 / GENERATIVE AI · CAREER TECH', description: 'A career preparation workspace that brings resume matching, interview practice, personalized plans, and an AI coach into one experience.', features: ['Compare a resume with a job description and identify skill gaps.', 'Practice role-specific interview questions and review feedback.', 'Get a focused seven-day learning plan and contextual career coaching.'], note: 'The live demo uses sample data. Signup and AI features require a hosted backend.', links: [['View live demo', 'https://careerpilot-ai-three-virid.vercel.app'], ['Explore source', 'https://github.com/pallavivhalgade/CareerPilotAI']] },
- driver: { title: 'DriverGuard AI', label: '02 / COMPUTER VISION · ANDROID · v1.3.0', description: 'A real-time driver safety application built around offline, on-device computer vision to detect drowsiness and distraction.', features: ['On-device detection with TensorFlow Lite and Google ML Kit.', 'Voice warnings bring attention back to the road.', 'Emergency SMS escalation for persistent risk.'], note: 'Latest release: v1.3.0. Refined monitoring UI, an animated 3D shield, and more reliable session controls. GitHub access is required for the private project’s APK. Device-test signed; physical camera, GPS, and SMS testing is still required.', links: [['Explore source', 'https://github.com/pallavivhalgade/AI-Based-Driver-Fatigue-and-Distraction-Detection'], ['Download APK · v1.3.0', 'https://github.com/pallavivhalgade/AI-Based-Driver-Fatigue-and-Distraction-Detection/releases/download/v1.3.0/DriverGuard-AI-v1.3.0.apk']] },
- interview: { title: 'Interview Prep Agent', label: '03 / LLM + NLP · INTERVIEW PREPARATION', description: 'An AI-powered application that analyzes a resume and job description to make interview preparation more focused and personal.', features: ['Role-specific questions with grounded answers.', 'Skill-gap insights based on the target job.', 'Personalized study plans, built with Groq and Sentence Transformers.'], note: '', links: [['Try live application', 'https://interview-prep-agent-94gjmmzu9q3w9gp4by8uan.streamlit.app/'], ['Explore source', 'https://github.com/pallavivhalgade/interview-prep-agent']] },
- health: { title: 'SmartHealth', label: '04 / DJANGO · HEALTHCARE PLATFORM', description: 'A role-based healthcare appointment system with dedicated workflows for patients, doctors, and administrators.', features: ['Secure scheduling with backend validation.', 'Authentication and role-specific workflows.', 'Django and SQLite, deployed with Gunicorn and WhiteNoise on Render.'], note: 'The project artwork is an illustrative model of the scheduling experience.', links: [['View live application', 'https://smart-health-appointment-1.onrender.com'], ['Explore source', 'https://github.com/pallavivhalgade/smart-health-appointment']] }
+  "career": {
+    "title": "CareerPilot AI",
+    "label": "01 / GENERATIVE AI · CAREER PREPARATION",
+    "description": "A career preparation workspace combining resume matching, interview practice, seven-day plans and contextual coaching.",
+    "features": [
+      "A LangGraph workflow connects resume matching, skill gaps, retrieval, planning and verification.",
+      "Chroma vector search and BM25 keyword retrieval provide context, with cross-encoder reranking.",
+      "A React interface connects to a FastAPI backend, with local models through Ollama and LangChain."
+    ],
+    "note": "The frontend preview supports sample-data browsing. Full AI functionality requires the configured Python backend, retrieval store and local model.",
+    "links": [
+      [
+        "Open frontend preview",
+        "https://careerpilot-ai-three-virid.vercel.app"
+      ],
+      [
+        "Explore source",
+        "https://github.com/pallavivhalgade/CareerPilotAI"
+      ]
+    ]
+  },
+  "driver": {
+    "title": "DriverGuard AI",
+    "label": "02 / COMPUTER VISION · ANDROID",
+    "description": "A college-project prototype combining on-device computer vision with driver fatigue and distraction signals.",
+    "features": [
+      "Google ML Kit face analysis and TensorFlow Lite yawn inference feed a timing and threshold policy.",
+      "Voice warnings support English, Hindi and Marathi, subject to installed Android voices.",
+      "Configurable emergency contacts and GPS-linked messaging support escalation, with an SMS-composer fallback."
+    ],
+    "note": "Source and release information are public. Emergency messaging depends on Android permissions, device support and GPS. The project is a prototype, not a certified driver-safety system. Dashboard previews use test data.",
+    "links": [
+      [
+        "Explore source",
+        "https://github.com/pallavivhalgade/AI-Based-Driver-Fatigue-and-Distraction-Detection"
+      ],
+      [
+        "View Android releases",
+        "https://github.com/pallavivhalgade/AI-Based-Driver-Fatigue-and-Distraction-Detection/releases"
+      ]
+    ]
+  },
+  "interview": {
+    "title": "Interview Prep Agent",
+    "label": "03 / LLM + NLP · INTERVIEW PREPARATION",
+    "description": "A Python application that uses a resume and target job description to make interview preparation more focused.",
+    "features": [
+      "Resume–job semantic matching with Sentence Transformers and cosine similarity.",
+      "Groq LLM integration for requirements, interview questions, skill gaps and preparation plans.",
+      "A Streamlit interface with PDF/DOCX parsing and downloadable preparation reports."
+    ],
+    "note": "Generated guidance should be checked against the candidate’s actual experience and target role.",
+    "links": [
+      [
+        "Open application",
+        "https://interview-prep-agent-94gjmmzu9q3w9gp4by8uan.streamlit.app/"
+      ],
+      [
+        "Explore source",
+        "https://github.com/pallavivhalgade/interview-prep-agent"
+      ]
+    ]
+  },
+  "health": {
+    "title": "Smart Health Appointment",
+    "label": "04 / DJANGO · INTERNSHIP PROJECT",
+    "description": "A healthcare appointment-booking application developed during my Python and Django internship at Manasvi Tech Solutions.",
+    "features": [
+      "Patient and doctor dashboards support appointment booking and management.",
+      "Role-based access separates patient and doctor functionality.",
+      "Booking validation and Django backend integration connect the application’s web pages."
+    ],
+    "note": "The artwork is an illustrative model of the scheduling experience. The repository contains setup and implementation details.",
+    "links": [
+      [
+        "Explore source",
+        "https://github.com/pallavivhalgade/smart-health-appointment"
+      ],
+      [
+        "Open application",
+        "https://smart-health-appointment-1.onrender.com"
+      ]
+    ]
+  },
+  "learnmate": {
+    "title": "LearnMate",
+    "label": "05 / IBM CLOUD · LEARNING PATHWAYS",
+    "description": "An AI learning-path advisor developed during the Edunet Foundation AI & Cloud internship, leveraging IBM SkillsBuild and IBM Cloud.",
+    "features": [
+      "IBM watsonx and Granite foundation models support personalized course recommendations.",
+      "Conversational prompts capture students’ interests, learning goals and current skill levels.",
+      "A course-document vector index provides learning context for roadmap recommendations."
+    ],
+    "note": "The cloud workflow requires an appropriate IBM Cloud configuration. The artwork illustrates the workflow; it is not an application screenshot.",
+    "links": [
+      [
+        "Explore source",
+        "https://github.com/pallavivhalgade/learnmate-watsonx"
+      ]
+    ]
+  }
 };
 const dialog = $('#project-dialog'); let previousFocus;
 document.querySelectorAll('[data-project]').forEach(button => button.addEventListener('click', () => { const project = projects[button.dataset.project]; previousFocus = button; $('#dialog-title').textContent = project.title; $('#dialog-label').textContent = project.label; $('#dialog-description').textContent = project.description; $('#dialog-features').replaceChildren(...project.features.map(feature => { const p = document.createElement('p'); p.textContent = feature; return p; })); $('#dialog-note').textContent = project.note; $('#dialog-note').hidden = !project.note; $('#dialog-links').replaceChildren(...project.links.map(([label, href]) => { const a = document.createElement('a'); a.textContent = `${label} ↗`; a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; })); dialog.showModal(); document.body.style.overflow = 'hidden'; }));
