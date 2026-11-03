@@ -46,3 +46,7 @@ Edit `certifications.js` for filter behavior and `certifications.css` for respon
 ## Visual system
 
 The site uses a unified Bricolage Grotesque / Inter / Space Grotesk type system, navy/mint/violet dark mode, and a complementary light mode. `immersive.css` owns the responsive layout and card presentation; `project-models.css` supplies the existing project illustrations. Pointer-driven card depth, scroll reveals, and progress are in `immersive.js`, with reduced-motion and coarse-pointer fallbacks. Project screenshots remain labeled as sample-data or test-data previews. Older style files are retained for history but are not loaded.
+
+## Creative composition
+
+The opening is an AI workbench: a full-width name masthead, a tilted portrait, an interactive Three.js sculpture, and a concise introduction. The sculpture is part of the opening viewport instead of a separate lower-page section. Projects use distinct full-width and split feature layouts; experience uses a timeline; skills use raised keycaps; credentials use paper-ticket styling. `creative.css` owns this composition above the shared interaction styles. A separate `pv-creative-theme` preference preserves the new palette selection.
