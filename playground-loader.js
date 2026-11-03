@@ -6,7 +6,7 @@ function loadPlayground() {
   loading = true;
   import('./playground.js').catch(() => {
     const hint = playground.querySelector('.drag-hint');
-    if (hint) hint.textContent = 'The interactive preview is unavailable. Explore the projects above.';
+    if (hint) hint.textContent = 'The interactive preview is unavailable. Explore the projects below.';
     playground.querySelectorAll('button').forEach(button => { button.disabled = true; });
   });
 }

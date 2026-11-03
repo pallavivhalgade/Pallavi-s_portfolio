@@ -52,3 +52,5 @@ The site uses a unified Bricolage Grotesque / Inter / Space Grotesk type system,
 The opening is an AI workbench: a full-width name masthead, a tilted portrait, an interactive Three.js sculpture, and a concise introduction. The sculpture is part of the opening viewport instead of a separate lower-page section. Projects use distinct full-width and split feature layouts; experience uses a timeline; skills use raised keycaps; credentials use paper-ticket styling. `creative.css` owns this composition above the shared interaction styles. A separate `pv-creative-theme` preference preserves the new palette selection.
 
 Typography and theme refined to Manrope/Inter, charcoal surfaces and restrained violet accents. Handwritten headings, rotated paper credentials and pastel project surfaces removed; light mode remains available.
+
+Repositioned the introduction into a clear text-left/portrait-right layout with Poppins headings. The 3D display now accompanies the current-work section, and all sections use a consistent type scale and grid.
