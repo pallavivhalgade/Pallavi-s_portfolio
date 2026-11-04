@@ -4,7 +4,7 @@ let loading = false;
 function loadPlayground() {
   if (loading) return;
   loading = true;
-  import('./playground.js').catch(() => {
+  import('./playground.js?v=studio-20261104').catch(() => {
     const hint = playground.querySelector('.drag-hint');
     if (hint) hint.textContent = 'The interactive preview is unavailable. Explore the projects below.';
     playground.querySelectorAll('button').forEach(button => { button.disabled = true; });

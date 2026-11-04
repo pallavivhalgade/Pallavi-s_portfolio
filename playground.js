@@ -37,7 +37,7 @@ try {
   ({ groups, objects } = createSculptures(environment));
   Object.entries(groups).forEach(([name, group]) => { group.visible = name === 'orbit'; root.add(group); });
   function resize() { const { width, height } = host.getBoundingClientRect(); if (!width || !height) return; renderer.setSize(width, height, false); camera.aspect = width / height; distance = camera.aspect < .8 ? 9.8 : 8.2; camera.updateProjectionMatrix(); positionObjects(); draw(); }
-  new ResizeObserver(resize).observe(host); resize(); document.querySelector('.hero-visual').classList.add('webgl-ready');
+  new ResizeObserver(resize).observe(host); resize();
   new IntersectionObserver(entries => { visible = entries[0].isIntersecting; if (visible) start(); else stop(); }, { rootMargin: '30px' }).observe(host);
   document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); else start(); });
   pauseButton.addEventListener('click', () => { paused = !paused; pauseLabel(); if (paused) stop(); else start(); });
@@ -54,6 +54,8 @@ try {
   canvas.addEventListener('keydown', e => { if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) return; e.preventDefault(); root.rotation.y += e.key === 'ArrowLeft' ? -.12 : e.key === 'ArrowRight' ? .12 : 0; root.rotation.x += e.key === 'ArrowUp' ? -.12 : e.key === 'ArrowDown' ? .12 : 0; draw(); });
   canvas.addEventListener('webglcontextlost', e => { e.preventDefault(); stop(); document.querySelector('.hero-visual').classList.remove('webgl-ready'); });
   canvas.addEventListener('webglcontextrestored', () => { document.querySelector('.hero-visual').classList.add('webgl-ready'); draw(); start(); });
+  document.querySelectorAll('#playground button').forEach(button => { button.disabled = false; });
+  document.querySelector('.hero-visual').classList.add('webgl-ready');
   draw(); start();
 } catch {
   stop(); renderer?.dispose(); canvas.hidden = true;
