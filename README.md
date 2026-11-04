@@ -23,3 +23,7 @@ Keep titles, dates, qualifications and project claims grounded in supplied recor
 ## Local preview
 
 Serve this directory with a static HTTP server. All assets use relative paths. Original font, icon and Three.js licences remain under `assets/`.
+
+## 3D animation
+
+The opening portrait now includes a real Three.js neural globe with orbiting nodes, drag/keyboard rotation and a pause control. `hero-scene.js` owns this renderer and its lifecycle; `three-d-effects.css` adds floating portrait and project-preview motion. The renderer stops off screen and in hidden tabs, caps pixel ratio and frame rate, remembers a pause preference, and renders a static scene for reduced-motion users. A CSS 3D illustration remains visible when WebGL is unavailable. No external model downloads or new libraries are required.

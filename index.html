@@ -6,7 +6,7 @@
 
 
 
-<script>try{document.documentElement.dataset.theme=localStorage.getItem('pv-studio-theme')==='dark'?'dark':'light'}catch{}</script>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('pv-studio-theme')==='dark'?'dark':'light';document.documentElement.dataset.heroMotion=localStorage.getItem('pv-hero-motion')==='paused'?'paused':'playing'}catch{}</script>
 
 
 
@@ -22,7 +22,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Pallavi Vholgade", "url": "https://pallavi-portfolio-preview.vercel.app/", "jobTitle": "AI/ML Engineer Intern", "worksFor": {"@type": "Organization", "name": "GritzNova"}, "sameAs": ["https://github.com/pallavivhalgade", "https://www.linkedin.com/in/pallavi-vholgade-05565b24b/"], "knowsAbout": ["Generative AI", "Agentic AI", "Retrieval-Augmented Generation", "Python", "Workflow Automation"]}</script>
 
 
-<link rel="preload" href="./assets/fonts/space-grotesk.woff2" type="font/woff2" crossorigin="anonymous" as="font"><link rel="preload" href="./assets/fonts/inter.woff2" type="font/woff2" crossorigin="anonymous" as="font"><link rel="stylesheet" href="./project-models.css"><link rel="stylesheet" href="./immersive.css"><link rel="stylesheet" href="./portfolio.css?v=studio-20261104"></head>
+<link rel="preload" href="./assets/fonts/space-grotesk.woff2" type="font/woff2" crossorigin="anonymous" as="font"><link rel="preload" href="./assets/fonts/inter.woff2" type="font/woff2" crossorigin="anonymous" as="font"><link rel="stylesheet" href="./project-models.css"><link rel="stylesheet" href="./immersive.css"><link rel="stylesheet" href="./portfolio.css?v=studio-20261104"><link rel="stylesheet" href="./three-d-effects.css?v=hero3d-20261104a"></head>
 <body><div class="reading-progress" aria-hidden="true"></div>
 <div class="wallpaper-layer" aria-hidden="true"><canvas id="live-wallpaper"></canvas><div class="wallpaper-vignette"></div></div>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -52,7 +52,7 @@
       </button>
       <div class="portrait-hint"><span>Move to explore</span><button id="portrait-reset" type="button" aria-label="Reset profile photo rotation">Reset ↺</button></div>
       <p id="portrait-help" class="visually-hidden">Move your pointer over the photo to tilt it. Tap or press Enter to change its angle. Use arrow keys to rotate, and Escape or Home to reset.</p>
-    </div><div class="portrait-meta"><span class="portrait-meta-icon" aria-hidden="true">✳</span><div><strong>Pallavi Vholgade</strong><span>AI/ML Engineer Intern · GritzNova</span></div><span aria-hidden="true">↗</span></div></div></div><div class="expertise-strip" aria-label="Areas I work in"><div><span>01 / INTELLIGENCE</span><strong>Generative AI &amp; RAG</strong><p>Connecting language models with relevant knowledge.</p></div><div><span>02 / ACTION</span><strong>Agents &amp; automation</strong><p>Turning multi-step tasks into connected workflows.</p></div><div><span>03 / EXPERIENCE</span><strong>Conversational AI</strong><p>Building and testing chat and voice interactions.</p></div></div></section><section class="section shell" id="projects" aria-labelledby="projects-title">
+    </div><div class="portrait-meta"><span class="portrait-meta-icon" aria-hidden="true">✳</span><div><strong>Pallavi Vholgade</strong><span>AI/ML Engineer Intern · GritzNova</span></div><span aria-hidden="true">↗</span></div><div class="hero-orb" data-renderer="loading"><div class="hero-orb-fallback" aria-hidden="true"><i></i><i></i><span></span></div><canvas id="hero-orb-canvas" width="215" height="215" tabindex="0" role="img" aria-label="Animated 3D neural globe. Drag to rotate, or use arrow keys. Press Home to reset the view."></canvas><span class="hero-orb-label">DRAG TO EXPLORE</span></div><button id="hero-motion" class="hero-motion" type="button" disabled="" aria-label="Pause hero 3D animation" aria-pressed="false">Pause 3D</button></div></div><div class="expertise-strip" aria-label="Areas I work in"><div><span>01 / INTELLIGENCE</span><strong>Generative AI &amp; RAG</strong><p>Connecting language models with relevant knowledge.</p></div><div><span>02 / ACTION</span><strong>Agents &amp; automation</strong><p>Turning multi-step tasks into connected workflows.</p></div><div><span>03 / EXPERIENCE</span><strong>Conversational AI</strong><p>Building and testing chat and voice interactions.</p></div></div></section><section class="section shell" id="projects" aria-labelledby="projects-title">
     <div class="section-heading" data-reveal=""><div><p class="eyebrow">Selected work / 2025–2026</p><h2 id="projects-title">Ideas made<br><span>into working projects.</span></h2></div><p>A selection of AI applications and software projects, with source code, implementation details and honest notes on what each prototype can do.</p></div>
     <div class="project-toolbar"><div class="filters" role="group" aria-label="Filter projects"><button class="active" data-filter="all" aria-pressed="true">All work <span>05</span></button><button data-filter="ai" aria-pressed="false">AI &amp; ML</button><button data-filter="web" aria-pressed="false">Web applications</button></div><span class="project-count" aria-live="polite">5 projects</span></div>
     <div class="projects-grid">
@@ -159,4 +159,4 @@
 
 <script src="./immersive.js" defer=""></script>
 
-</body></html>
+<script type="module" src="./hero-scene.js?v=hero3d-20261104a"></script></body></html>
